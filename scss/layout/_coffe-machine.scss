@@ -1,0 +1,33 @@
+@use "../variables/colors";
+@use "../mixins/mixin";
+@use "../components/buttons";
+
+.coffe-machine {
+  padding: 140px 0px 90px;
+  background-color: #1c1814;
+  .coffe-machine__wrapper {
+    padding: 72px 80px 84px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+  }
+  .coffe-machine__img:hover  {
+    transform: scale(1.2);
+    transition: all 2s;
+  }
+  .coffe-machine__info {
+    max-width: 535px;
+  }
+  .coffe-machine__info-title {
+  }
+  .coffe-machine__desc {
+    margin-top: 36px;
+  }
+  .coffe-machine__btn {
+    margin-top: 36px;
+    padding: 20px 36px;
+  }
+}
+.container {
+}

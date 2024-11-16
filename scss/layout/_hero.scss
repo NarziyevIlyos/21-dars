@@ -1,0 +1,49 @@
+@use "../variables/colors";
+@use "../mixins/mixin";
+@use "../components/buttons";
+
+.hero {
+    background-image: url("../../assets/pictures/hero-coffe-bg-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.container {
+}
+.hero__wrapper {
+    padding-top: 147px;
+    padding-bottom: 166px;
+ 
+}
+.hero__info {
+    // border: 1px solid red;
+    position: relative;
+
+    &::after {
+        content: url("../../assets/icons/Play.svg");
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        &::after:hover {
+            transform: scale(1.2);
+            transition: all 0.3s;
+            background-color: $faint-white;
+        }
+      
+
+    }
+   
+
+    .hero__title {
+    }
+    .hero__desc {
+        margin-top: 32px;
+    }
+    .btn {
+        margin-top: 64px;
+        padding: 24px 40px;
+        font-size: 18px;
+    }
+}
+

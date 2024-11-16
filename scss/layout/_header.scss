@@ -1,0 +1,56 @@
+@use "../variables/colors";
+
+.header {
+}
+.nav {
+  display: flex;
+}
+.nav__container {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 33px;
+//   border: 1px solid;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__links {
+  display: flex;
+  gap: 48px;
+}
+
+.nav__link .text {
+  position: relative;
+}
+
+.nav__link .text::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: $btn-bg-color;
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translate(-50%);
+}
+.nav__link .text:hover,
+.nav__link img:hover {
+  color: $btn-bg-color;
+  transform: scale(1.3);
+  transition: all 0.5s;
+
+  &::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+}
+
+.nav__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav__link-img {
+}

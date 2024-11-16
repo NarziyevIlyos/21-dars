@@ -1,0 +1,125 @@
+@use "../variables/colors";
+@use "../mixins/mixin";
+@use "../components/buttons";
+
+.popular-products {
+  margin-top: 140px;
+}
+.container {
+}
+.popular-products__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popular-products__sub-title {
+  margin-top: 12px;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+}
+.orange {
+}
+
+.orange-bg {
+}
+.popular-products__title {
+  font-family: Righteous;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 62.4px;
+}
+.popular-products__cards-wrapper {
+  padding: 56px 0px;
+  display: flex;
+  gap: 36px;
+
+  .card {
+    padding: 48px 48px 36px 48px;
+    // border: 1px solid white;
+     // width: calc(( 1170px / 3) - ( 2 * 36px ));
+  }
+  .card__header {
+    overflow: hidden;
+  }
+  .card__header img {
+    &:hover {
+      transform: scale(1.1);
+      transition: all 1s;
+      box-shadow: rgba(247, 245, 245, 0.1) 0px 20px 25px -5px,
+        rgba(253, 251, 251, 0.04) 0px 10px 10px -5px;
+    }
+  }
+  .card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__title {
+    margin-top: 20px;
+    font-family: Righteous;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.8px;
+    text-transform: uppercase;
+  }
+  .card__btn {
+    margin-top: 38px;
+    padding: 13px 20px;
+  }
+
+  .card__btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .text {
+  }
+  .card__sub-title {
+    margin-top: 36px;
+    display: flex;
+    gap: 13px;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-transform: uppercase;
+  }
+  .card__sub-title-stars {
+  }
+  .card__price {
+    margin-top: 20px;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+  }
+}
+
+.popular-products__btn {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  color: $primary-color;
+  padding: 20px 36px;
+  background-color: $btn-bg-color;
+  border: 2px solid transparent;
+
+  &:hover {
+    border-color: $btn-bg-color;
+    color: $btn-bg-color;
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: green;
+    border-color: transparent;
+  }
+}

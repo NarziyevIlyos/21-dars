@@ -1,0 +1,59 @@
+@use "../variables/colors";
+
+.creating-new-story {
+}
+.container {
+}
+
+.creating-new-story__wrapper {
+    display: flex;
+    gap: 32px;
+}
+.creating-new-story__imgs-wrapper {
+    display: flex;
+    gap: 32px;
+}
+.creating-new-story__imgs-left-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    & img {
+        width: 298px;
+        height: 302px;
+
+        &:hover {
+            transform: scale(1.15);
+            transition: all 1s;
+            box-shadow: rgba(247, 245, 245, 0.1) 0px 20px 25px -5px, rgba(253, 251, 251, 0.04) 0px 10px 10px -5px;
+        }
+    }
+}
+.creating-new-story__imgs-right-columns {
+    &:hover {
+        transform: scale(1.15);
+        transition: all 1s;
+        box-shadow: rgba(247, 245, 245, 0.1) 0px 20px 25px -5px, rgba(253, 251, 251, 0.04) 0px 10px 10px -5px;
+    }
+}
+.creating-new-story__info-wrapper {
+    width: 510px;
+    padding: 120px 56px  147px 56px;
+}
+.creating-new-story__info-sub-title {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+.creating-new-story__info-title {
+    margin-top: 12px;
+    font-family: Righteous;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+
+}
+.creating-new-story__info-desc {
+    margin-top: 36px;
+}
